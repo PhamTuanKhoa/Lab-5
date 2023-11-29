@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bus Ticket Booking Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Bus Ticket Booking Website</h1>
+  </header>
+
+  <main>
+    <div class="search-bar">
+      <input list="cities" placeholder="Điểm đi">
+      <datalist id="cities">
+        <option value="Hồ Chí Minh">
+        <option value="Hà Nội">
+        <option value="Nha Trang">
+        <option value="Vũng Tàu">
+        <option value="Đà Nẵng">
+        <option value="Bạc Liêu">
+      </datalist>
+      <input list="cities" placeholder="Điểm đến">
+      <datalist id="cities">
+        <option value="Hồ Chí Minh">
+        <option value="Hà Nội">
+        <option value="Nha Trang">
+        <option value="Vũng Tàu">
+        <option value="Đà Nẵng">
+        <option value="Bạc Liêu">
+      </datalist>
+      <input placeholder="Chọn ngày khởi hành" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date"/>
+      <input type="number" placeholder="Nhập số lượng vé">
+      <button type="submit">Tìm chuyến xe</button>
+    </div>
+
+    <div class="results">
+      <h2>Kết quả tìm kiếm</h2>
+      <div class="result">
+        <img src="./images/mailinh-bus.jpg" alt="Bus image">
+        <div class="details">
+          <h3>Nhà xe Mai Linh</h3>
+          <p>Khởi hành lúc: 8:00 sáng</p>
+          <p>Thời gian di chuyển: 6 tiếng</p>
+          <p>Giá vé: 200.000đ</p>
+          <button type="button">Đặt vé</button>
+        </div>
+      </div>
+      <div class="result">
+        <img src="./images/phuongtrang-bus.jpg" alt="Bus image">
+        <div class="details">
+          <h3>Nhà xe Phương Trang</h3>
+          <p>Khởi hành lúc: 9:00 sáng</p>
+          <p>Thời gian di chuyển: 5 tiếng 30 phút</p>
+          <p>Giá vé: 220.000đ</p>
+          <button type="button">Đặt vé</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Copyright © 2023 Bus Ticket Booking Website</p>
+  </footer>
+
+</body>
+</html>
